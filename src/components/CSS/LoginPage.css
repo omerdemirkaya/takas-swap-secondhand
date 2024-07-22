@@ -1,0 +1,113 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #edffde, #d1e7d5); /* Gradient background */
+  }
+  
+  .login-panel {
+    width: 30%; /* Genişliği daraltarak dikey görünümü iyileştirdik */
+    padding: 20px; /* İçeriği daha iyi yerleştirmek için iç boşluk ekledik */
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column; /* İçeriği dikey olarak düzenledik */
+    align-items: center; /* İçeriği yatay olarak ortaladık */
+    background: rgba(255, 255, 255, 0.8); /* Arka planı hafif şeffaf yaptık */
+  }
+  
+  .login-panel-header {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    margin-bottom: 20px; /* Başlık ve içerik arasında boşluk ekledik */
+  }
+  
+  .login-panel-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-panel-content form {
+    width: 100%; /* Formu tam genişlikte yapıyoruz */
+    display: flex;
+    flex-direction: column; /* Form içeriğini dikey olarak düzenliyoruz */
+    align-items: center; /* Form içeriğini yatay olarak ortalıyoruz */
+  }
+  
+  .login-panel-content input {
+    padding: 10px;
+    transition: width 0.4s ease-in-out;
+    width: 80%; /* Input genişliğini ayarladık */
+    background-color: #f1f1f1;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* İnput kenarına sınır ekledik */
+  }
+  
+  .login-panel-content button {
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 80%; /* Buton genişliğini ayarladık */
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50; /* Buton rengi */
+    color: white; /* Buton yazı rengi */
+    border: none; /* Buton kenarlarını kaldırdık */
+    border-radius: 10px; /* Buton kenarlarını yuvarlattık */
+    cursor: pointer; /* Butona imleç ekledik */
+    margin-top: 10px; /* Butona üstten biraz boşluk ekledik */
+  }
+  
+  .login-panel-content button:hover {
+    background-color: #45a049; /* Buton hover rengi */
+  }
+  
+  .warning-message {
+    margin-top: 20px; /* Mesaj ile form arasında boşluk ekledik */
+    font-size: 16px;
+    color: #555;
+    cursor: pointer; /* Mesajı tıklanabilir yaptık */
+  }
+  
+  .google-button {
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 80%; /* Buton genişliğini ayarladık */
+    padding: 10px;
+    text-align: center;
+    background-color: #DB4437; /* Google buton rengi */
+    color: white; /* Buton yazı rengi */
+    border: none; /* Buton kenarlarını kaldırdık */
+    border-radius: 10px; /* Buton kenarlarını yuvarlattık */
+    cursor: pointer; /* Butona imleç ekledik */
+    margin-top: 10px; /* Butona üstten biraz boşluk ekledik */
+    display: flex; /* Flexbox ile içerik düzenlemesi */
+    align-items: center; /* İçeriği dikey olarak ortaladık */
+    justify-content: center; /* İçeriği yatay olarak ortaladık */
+  }
+  
+  .google-button:hover {
+    background-color: #c33d2e; /* Google buton hover rengi */
+  }
+  
+  @media (max-width: 768px) {
+    .login-panel {
+      width: 90%;
+    }
+    .login-panel-content input,
+    .login-panel-content button {
+      width: 75%;
+    }
+  }
+  

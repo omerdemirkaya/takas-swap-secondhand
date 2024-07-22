@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to right, #edffde, #d1e7d5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .info {
+    width: 100%;
+    max-width: 700px; /* Optimize width for readability */
+    padding: 30px; /* Increased padding for more space */
+    height: 40vh;
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 15px; /* More rounded corners */
+    background-color: #ffffff; /* White background for better contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for more emphasis */
+    text-align: center;
+  }
+  
+  .info h3 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #2c6b56; /* Dark green color for the title */
+    margin-bottom: 20px; /* Space between title and text */
+    font-weight: bold; /* Make title bold */
+  }
+  
+  .info span {
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+    color: #555; /* Slightly lighter gray color for text */
+    line-height: 1.8; /* Increase line height for better readability */
+    display: block; /* Ensure the span behaves like a block element */
+    margin: 0 auto; /* Center align text within the container */
+    max-width: 600px; /* Limit text width for better readability */
+  }
+  .fa-recycle {
+    font-size: 4rem; /* İkonun boyutunu 4rem yapın */
+    color: #2c6b56; /* İkon rengini ayarlayın */
+    margin-top: 20px; /* İkonun yukarıdan boşluğunu ayarlayın */
+  }
+  @media (max-width:760px) {
+    .info{
+        max-width: 90%;
+        width: 90%;
+        margin-top: 10px;
+        height: 75vh;
+    }
+  }
